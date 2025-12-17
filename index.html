@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manejo de Equipos - El Buen Pastor</title>
+    <link rel="icon" href="styles/Portada-Iebpyouthsg.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="styles/el_buen_pastor.png" alt="Logo" class="logo">
+                <h1>Manejo de Equipos</h1>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif;" class="subtitle">El Buen Pastor</p>
+            </div>
+        </header>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat">
+                <span class="stat-label">Equipos</span>
+                <span class="stat-value" id="totalTeams">2</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Total Puntos</span>
+                <span class="stat-value" id="totalPoints">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Participantes</span>
+                <span class="stat-value" id="totalParticipants">0</span>
+            </div>
+        </div>
+
+        <!-- Teams Container -->
+        <div class="teams-grid" id="teamsGrid">
+            <!-- Teams will be added here dynamically -->
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button class="btn-primary" id="addTeamBtn">
+                <i class="fas fa-plus-circle"></i>
+                Nuevo Equipo
+            </button>
+            <button class="btn-secondary" id="resetAllBtn">
+                <i class="fas fa-redo"></i>
+                Reiniciar Todo
+            </button>
+            <button class="btn-success" id="exportBtn">
+                <i class="fas fa-download"></i>
+                Exportar Datos
+            </button>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3><i class="fas fa-info-circle"></i> Cómo usar:</h3>
+            <ul>
+                <li>Haz clic en "Nuevo Equipo" para agregar más equipos</li>
+                <li>Cambia el nombre del equipo directamente en el campo de texto</li>
+                <li>Agrega participantes escribiendo su nombre y presionando Enter o el botón Agregar</li>
+                <li>Usa los botones +1/-1 para modificar los puntos</li>
+                <li>Haz clic en la X para eliminar un participante o equipo</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
